@@ -1,4 +1,3 @@
-
 #establish what are the 4 unique nucleotides
 Nucleotides = ["A", "C", "G", "T"]
 
