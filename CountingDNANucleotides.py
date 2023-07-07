@@ -23,3 +23,11 @@ def countNucleotides(seq):
 
 result = countNucleotides(userDNA)
 print("Your sequence has the following nucleotide frequencies:", result) #displays frequency of lettering
+
+#updating the code on 7.6.23 to include the Guanine-to-Cytosine (GC) content statistic. The GC content influences binding stability and it is known that primer sequences with 40% - 60% GC content ensures stable binding of primers to templates.
+#GC-rich sequences are more stable than those compare to sequences with low GC content.
+def guanineCytosine(seq): #will provide the GC content for the sequence
+    return round((seq.count('C') + seq.count('G'))/len(seq) * 100)
+
+print("The Guanine-to-Cytosine (GC) content of your sequence is: ", guanineCytosine(validatedSeq),"%")
+print()
